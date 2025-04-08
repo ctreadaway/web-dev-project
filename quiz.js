@@ -34,7 +34,7 @@ function submitQuiz() {
     }
 
     // Display the score
-    document.getElementById('score').textContent = `Your score is ${score} out of 5.`;
+    document.getElementById('score').textContent = `Your score is ${score} out of 4.`;
     
     // Pass/Fail result
     if (score >= 4) {
