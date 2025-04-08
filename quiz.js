@@ -18,18 +18,22 @@ function submitQuiz() {
     }
 
     // Question 3: Braves league
-    if (q3 === "MLB") {
+    if (q3 === "mlb") { // Make sure to lowercase the input for case-insensitivity
         score++;
     }
 
-    // Question 4: Multiple answers
+    // Question 4: Multiple answers (Hawks, Falcons, Braves)
+    let q4CorrectAnswers = ["A", "B", "D"]; // Correct answers for Q4
     let q4Score = 0;
+
     q4.forEach((checkbox) => {
-        if (checkbox.value === "A" || checkbox.value === "B" || checkbox.value === "D") {
+        if (q4CorrectAnswers.includes(checkbox.value)) {
             q4Score++;
         }
     });
-    if (q4Score === 3) {
+
+    // Make sure the user selected exactly 3 answers (Hawks, Falcons, Braves) and only those
+    if (q4Score === 3 && q4.length === 3) {
         score++;
     }
 
@@ -37,7 +41,7 @@ function submitQuiz() {
     document.getElementById('score').textContent = `Your score is ${score} out of 4.`;
     
     // Pass/Fail result
-    if (score >= 4) {
+    if (score === 4) { // Pass if score is exactly 4
         document.getElementById('resultText').textContent = "You passed the quiz!";
     } else {
         document.getElementById('resultText').textContent = "You failed the quiz. Try again!";
