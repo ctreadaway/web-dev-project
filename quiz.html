@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment Quiz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Atlanta Sports</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic1.html">Topic 1</a></li>
+                <li><a href="topic2.html">Topic 2</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Self-Assessment Quiz</h2>
+            <p>Test your knowledge after reading the materials!</p>
+        </section>
+
+        <section class="content">
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="question">
+                    <h3>1. Which division does the NBA's Atlanta Hawks belong to?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="A"> Southeast Eastern Conference
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="B"> Atlantic Eastern Conference
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="C"> Central Eastern Conference
+                    </label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <h3>2. Who is the star player for the Atlanta Falcons in 2025?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="A"> Matt Ryan
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="B"> Drake London
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="C"> Calvin Ridley
+                    </label>
+                </div>
+
+                <!-- Fill in the blank Question -->
+                <div class="question">
+                    <h3>3. The Atlanta Braves are part of the ________ . </h3>
+                    <input type="text" id="q3" placeholder="Enter your answer">
+                </div>
+
+                <!-- Multiple-answer question -->
+                <div class="question">
+                    <h3>4. Which teams are part of the Atlanta Sports website?</h3>
+                    <label>
+                        <input type="checkbox" name="q4" value="A"> Hawks
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="q4" value="B"> Falcons
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="q4" value="C"> New York Yankees
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="q4" value="D"> Braves
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="submitQuiz()">Submit</button>
+                <button type="button" onclick="restartQuiz()">Restart</button>
+            </form>
+        </section>
+
+        <section id="result" style="display: none;">
+            <h3>Your Score</h3>
+            <p id="score"></p>
+            <p id="resultText"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Atlanta Sports. All rights reserved.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
