@@ -11,8 +11,43 @@ body {
     color: white;
 }
 
+/* Braves - Navy, Red, Gold */
+.braves-page {
+    background-color: #13274F; /* Braves Navy */
+    color: #FFD700; /* Gold */
+}
+
+.braves-page header,
+.braves-page footer {
+    background-color: #CE1141; /* Braves Red */
+    color: white;
+}
+
+/* Hawks - Red and White */
+.hawks-page {
+    background-color: #E03A3E; /* Hawks Red */
+    color: #ffffff; /* White text */
+}
+
+.hawks-page header,
+.hawks-page footer {
+    background-color: #FFFFFF; /* White background for header/footer */
+    color: #E03A3E; /* Red text */
+}
+
+/* Falcons - Red, Black, Silver */
+.falcons-page {
+    background-color: #A71930; /* Falcons Red */
+    color: #ffffff;
+}
+
+.falcons-page header,
+.falcons-page footer {
+    background-color: #000000; /* Falcons Black */
+    color: #fff;
+}
+
 header {
-    background-color: #E03A3E; /* Atlanta Hawks red */
     padding: 20px;
     text-align: center;
 }
@@ -82,7 +117,6 @@ main {
 }
 
 footer {
-    background-color: #2C2926;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
