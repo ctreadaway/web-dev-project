@@ -104,13 +104,14 @@ body.index-page {
 /* BRAVES PAGE */
 body.braves-page {
     background-color: #13274F; /* Braves Navy */
-    color: #FFD700;
+    color: #ffffff;
     background-image: url('https://logos-world.net/wp-content/uploads/2020/06/Atlanta-Braves-Logo-1990-2017.png');
-    background-size: contain;
+    background-size: 20%; /* Adjust this value to control the size of the logo */
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: left top, right top; /* Places images on the left and right */
+    background-attachment: fixed; /* Keeps the images fixed while scrolling */
 }
+
 
 .braves-page header,
 .braves-page footer {
