@@ -1,4 +1,4 @@
-/* General reset and base styles */
+/* === General Reset and Base Styles === */
 * {
     margin: 0;
     padding: 0;
@@ -11,42 +11,7 @@ body {
     color: white;
 }
 
-/* Braves - Navy, Red, Gold */
-.braves-page {
-    background-color: #13274F; /* Braves Navy */
-    color: #FFD700; /* Gold */
-}
-
-.braves-page header,
-.braves-page footer {
-    background-color: #CE1141; /* Braves Red */
-    color: white;
-}
-
-/* Hawks - Red and White */
-.hawks-page {
-    background-color: #E03A3E; /* Hawks Red */
-    color: #ffffff; /* White text */
-}
-
-.hawks-page header,
-.hawks-page footer {
-    background-color: #FFFFFF; /* White background for header/footer */
-    color: #E03A3E; /* Red text */
-}
-
-/* Falcons - Red, Black, Silver */
-.falcons-page {
-    background-color: #A71930; /* Falcons Red */
-    color: #ffffff;
-}
-
-.falcons-page header,
-.falcons-page footer {
-    background-color: #000000; /* Falcons Black */
-    color: #fff;
-}
-
+/* === Header and Footer Shared Styling === */
 header {
     padding: 20px;
     text-align: center;
@@ -56,6 +21,13 @@ header h1 {
     font-size: 2.5rem;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* === Navigation === */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -76,8 +48,9 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* === Hero Section === */
 .hero {
-    background-color: #2C2926; /* Dark background */
+    background-color: #2C2926;
     padding: 40px;
     text-align: center;
 }
@@ -86,6 +59,7 @@ nav ul li a:hover {
     font-size: 2rem;
 }
 
+/* === Main Content === */
 main {
     padding: 20px;
 }
@@ -94,6 +68,7 @@ main {
     margin-top: 20px;
 }
 
+/* === Cards === */
 .cards {
     display: flex;
     justify-content: space-between;
@@ -101,7 +76,7 @@ main {
 }
 
 .card {
-    background-color: #1D1D1B; /* Dark card background */
+    background-color: #1D1D1B;
     padding: 20px;
     border-radius: 10px;
     width: 45%;
@@ -113,11 +88,67 @@ main {
 
 .card p {
     font-size: 1rem;
-    color: #B8B8B8; /* Lighter text color */
+    color: #B8B8B8;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
+/* === Page-Specific Styles === */
+
+/* INDEX PAGE - Atlanta Skyline */
+body.index-page {
+    background-image: url('https://ca264df6b006075d6612-4d8693febf8638b9aceea3f57dbca0ba.ssl.cf1.rackcdn.com/Architecture-041-170502.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+/* BRAVES PAGE */
+body.braves-page {
+    background-color: #13274F; /* Braves Navy */
+    color: #FFD700;
+    background-image: url('https://logos-world.net/wp-content/uploads/2020/06/Atlanta-Braves-Logo-1990-2017.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.braves-page header,
+.braves-page footer {
+    background-color: #CE1141;
+    color: white;
+}
+
+/* HAWKS PAGE */
+body.hawks-page {
+    background-color: #E03A3E;
+    color: white;
+    background-image: url('https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Hawks-Symbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hawks-page header,
+.hawks-page footer {
+    background-color: #FFFFFF;
+    color: #E03A3E;
+}
+
+/* FALCONS PAGE */
+body.falcons-page {
+    background-color: #A71930;
+    color: white;
+    background-image: url('https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Falcons-symbol.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.falcons-page header,
+.falcons-page footer {
+    background-color: #000000;
+    color: white;
+}
+
