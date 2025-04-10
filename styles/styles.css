@@ -107,11 +107,10 @@ body.braves-page {
     color: #ffffff;
     background-image: url('https://logos-world.net/wp-content/uploads/2020/06/Atlanta-Braves-Logo-1990-2017.png');
     background-size: 20%; /* Adjust this value to control the size of the logo */
-    background-repeat: no-repeat;
-    background-position: left top, right top; /* Places images on the left and right */
+    background-repeat: repeat-y; /* Repeat the logo vertically */
+    background-position: left top, right top; /* Places images on the left and right sides */
     background-attachment: fixed; /* Keeps the images fixed while scrolling */
 }
-
 
 .braves-page header,
 .braves-page footer {
@@ -152,4 +151,5 @@ body.falcons-page {
     background-color: #000000;
     color: white;
 }
+
 
