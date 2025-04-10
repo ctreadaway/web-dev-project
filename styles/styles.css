@@ -164,3 +164,40 @@ body.falcons-page {
     background-color: #000000;
     color: white;
 }
+
+/* === Timeline Section === */
+.timeline {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1D1D1B;
+    border-radius: 10px;
+}
+
+.timeline h3 {
+    font-size: 2rem;
+    color: #CE1141; /* Braves Red */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline ol li {
+    background-color: #2C2926;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.timeline ol li strong {
+    color: #CE1141; /* Braves Red */
+}
+
+.timeline ol li:nth-child(even) {
+    background-color: #13274F; /* Braves Navy */
+}
