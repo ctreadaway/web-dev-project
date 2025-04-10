@@ -13,7 +13,7 @@ body {
 
 /* === Shared Content Container (NEW) === */
 .content-container {
-    max-width: 900px;       /* keeps text away from logos */
+    max-width: 1200px;       /* keeps text away from logos */
     margin: 0 auto;         /* centers the content */
     padding: 20px;          /* inner spacing */
 }
