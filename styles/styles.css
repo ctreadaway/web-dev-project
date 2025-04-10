@@ -127,6 +127,43 @@ body.braves-page {
     color: white;
 }
 
+/* Braves Timeline */
+.braves-page .timeline {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1D1D1B;
+    border-radius: 10px;
+}
+
+.braves-page .timeline h3 {
+    font-size: 2rem;
+    color: #CE1141; /* Braves Red */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.braves-page .timeline ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.braves-page .timeline ol li {
+    background-color: #2C2926;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.braves-page .timeline ol li strong {
+    color: #CE1141; /* Braves Red */
+}
+
+.braves-page .timeline ol li:nth-child(even) {
+    background-color: #13274F; /* Braves Navy */
+}
+
 /* HAWKS PAGE */
 body.hawks-page {
     background-color: #E03A3E;
@@ -144,6 +181,43 @@ body.hawks-page {
 .hawks-page footer {
     background-color: #FFFFFF;
     color: #E03A3E;
+}
+
+/* Hawks Timeline */
+.hawks-page .timeline {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1D1D1B;
+    border-radius: 10px;
+}
+
+.hawks-page .timeline h3 {
+    font-size: 2rem;
+    color: #E03A3E; /* Hawks Red */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hawks-page .timeline ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hawks-page .timeline ol li {
+    background-color: #2C2926;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.hawks-page .timeline ol li strong {
+    color: #E03A3E; /* Hawks Red */
+}
+
+.hawks-page .timeline ol li:nth-child(even) {
+    background-color: #C8102E; /* Darker Hawks Red */
 }
 
 /* FALCONS PAGE */
@@ -165,27 +239,27 @@ body.falcons-page {
     color: white;
 }
 
-/* === Timeline Section === */
-.timeline {
+/* Falcons Timeline */
+.falcons-page .timeline {
     margin-top: 40px;
     padding: 20px;
     background-color: #1D1D1B;
     border-radius: 10px;
 }
 
-.timeline h3 {
+.falcons-page .timeline h3 {
     font-size: 2rem;
-    color: #CE1141; /* Braves Red */
+    color: #A71930; /* Falcons Red */
     text-align: center;
     margin-bottom: 20px;
 }
 
-.timeline ol {
+.falcons-page .timeline ol {
     list-style-type: none;
     padding: 0;
 }
 
-.timeline ol li {
+.falcons-page .timeline ol li {
     background-color: #2C2926;
     margin: 10px 0;
     padding: 15px;
@@ -194,10 +268,10 @@ body.falcons-page {
     font-size: 1.1rem;
 }
 
-.timeline ol li strong {
-    color: #CE1141; /* Braves Red */
+.falcons-page .timeline ol li strong {
+    color: #A71930; /* Falcons Red */
 }
 
-.timeline ol li:nth-child(even) {
-    background-color: #13274F; /* Braves Navy */
+.falcons-page .timeline ol li:nth-child(even) {
+    background-color: #000000; /* Falcons Black */
 }
