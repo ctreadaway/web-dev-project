@@ -25,27 +25,40 @@
     <main>
         <section class="page-intro">
             <h2>Early Web Security (1990s – Early 2000s)</h2>
-            <p>In the early days of the web, security was often an afterthought. Websites were mostly static, and user interaction was minimal. However, as interactivity increased, so did vulnerabilities. Let’s explore the major threats and the beginnings of web security.</p>
+            <p>In the early days of the web, security was often an afterthought. Websites were mostly static, and user interaction was minimal. However, as interactivity increased through login forms, comments, and e-commerce, so did vulnerabilities. Let's explore the common threats, challenges, and how early web security began to take shape.</p>
         </section>
 
         <section class="content">
             <h3>Common Early Vulnerabilities</h3>
             <ul>
-                <li><strong>Unencrypted HTTP:</strong> Data was transferred in plain text, making it easy to intercept.</li>
-                <li><strong>Cross-Site Scripting (XSS):</strong> Malicious scripts were injected into webpages, allowing attackers to steal cookies or credentials.</li>
-                <li><strong>SQL Injection:</strong> Poor validation allowed attackers to manipulate backend databases through form fields.</li>
-                <li><strong>Weak Authentication:</strong> Sites often used simple username/password systems with no encryption or hashing.</li>
+                <li><strong>Unencrypted HTTP:</strong> All data was transmitted in plaintext, leaving passwords, personal information, and financial data exposed to eavesdroppers.</li>
+                <li><strong>Cross-Site Scripting (XSS):</strong> Attackers could inject scripts into input fields, allowing them to hijack sessions or perform phishing attacks on unsuspecting users.</li>
+                <li><strong>SQL Injection:</strong> Without input sanitization, SQL queries could be manipulated by attackers to view, modify, or delete database contents.</li>
+                <li><strong>Weak Authentication:</strong> Passwords were often stored without hashing or encryption. Brute force attacks and password reuse made accounts vulnerable.</li>
+                <li><strong>Buffer Overflows:</strong> Programs written in C/C++ were especially prone to memory-based exploits that allowed remote code execution.</li>
             </ul>
 
             <h3>First Line of Defense</h3>
-            <p>Security strategies included simple firewalls, IP restrictions, and basic antivirus software. Secure Sockets Layer (SSL) began gaining traction in the late 90s, offering encrypted connections.</p>
+            <p>Initially, security was handled at the network level rather than the application level. Tools included:</p>
+            <ul>
+                <li><strong>Packet Filtering Firewalls:</strong> Allowed or blocked traffic based on IP, port, and protocol.</li>
+                <li><strong>Access Control Lists (ACLs):</strong> Used to restrict access to sensitive systems.</li>
+                <li><strong>Antivirus Software:</strong> Focused on known threats, primarily on the client side.</li>
+                <li><strong>Manual Code Review:</strong> Security auditing was a slow and manual process without automated tools.</li>
+            </ul>
+            <p>Secure Sockets Layer (SSL) began emerging as a vital solution, encrypting data in transit to prevent sniffing and man-in-the-middle attacks.</p>
 
             <h3>Milestone Moments</h3>
             <ul>
-                <li>1995: Netscape introduces SSL v2 for encrypted communication.</li>
-                <li>1999: OWASP (Open Web Application Security Project) is founded to provide security best practices.</li>
-                <li>2001: Microsoft issues major updates to address IIS vulnerabilities exploited by the Code Red worm.</li>
+                <li><strong>1994–1995:</strong> Netscape develops and introduces SSL 2.0 (followed by SSL 3.0 in 1996), providing the foundation for secure web communication.</li>
+                <li><strong>1996:</strong> First recorded major XSS attacks begin appearing in public forums and early blogging platforms.</li>
+                <li><strong>1998:</strong> First known SQL injection incident reported, leading to increased awareness of input sanitization.</li>
+                <li><strong>1999:</strong> The OWASP project is launched to educate developers and promote secure coding practices.</li>
+                <li><strong>2001:</strong> The Code Red worm exploits buffer overflow in Microsoft IIS, spreading rapidly and infecting hundreds of thousands of servers.</li>
             </ul>
+
+            <h3>Legacy of Early Web Security</h3>
+            <p>Despite the limitations, this era laid the groundwork for today's security practices. It led to the creation of browser-based sandboxing, security headers like <code>Content-Security-Policy</code>, and awareness that application-layer security is essential. Many of the original vulnerabilities still exist today, but the tools to detect and defend against them have drastically improved.</p>
         </section>
     </main>
 

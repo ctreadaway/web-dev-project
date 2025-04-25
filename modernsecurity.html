@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Web Security</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Web Security</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body class="modernsecuritypage">
-    <header>
-        <div class="logo">
-            <h1>Web Security Evolution</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="earlysecurity.html">Early Security</a></li>
-                <li><a href="modernsecurity.html">Modern Security</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <h1>Web Security Evolution</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="earlysecurity.html">Early Security</a></li>
+        <li><a href="modernsecurity.html">Modern Security</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="page-intro">
-            <h2>Modern Web Security (2000s – Present)</h2>
-            <p>Today’s web security involves a combination of advanced tools, strict protocols, and industry standards designed to protect users and data across increasingly complex applications.</p>
-        </section>
+  <main>
+    <section class="page-intro">
+      <h2>Modern Web Security (2000s – Present)</h2>
+      <p>Modern web security encompasses a comprehensive set of tools, protocols, and best practices designed to protect users and data in today's complex digital landscape. As web applications have evolved, so have the methods to secure them against a myriad of threats.</p>
+    </section>
 
-        <section class="content">
-            <h3>Key Modern Security Tools</h3>
-            <ul>
-                <li><strong>HTTPS Everywhere:</strong> All modern websites use HTTPS with TLS to encrypt traffic and ensure data privacy.</li>
-                <li><strong>Content Security Policy (CSP):</strong> A browser feature that helps prevent XSS attacks by restricting resource loading.</li>
-                <li><strong>Secure Cookies:</strong> Cookies now include `Secure`, `HttpOnly`, and `SameSite` attributes to limit access and reduce cross-site risks.</li>
-                <li><strong>OAuth 2.0:</strong> A secure way to authorize third-party applications without sharing passwords.</li>
-                <li><strong>Multi-Factor Authentication (MFA):</strong> Adds another layer of login security beyond just passwords.</li>
-            </ul>
+    <section class="content">
+      <h3>Key Modern Security Tools</h3>
+      <ul>
+        <li><strong>HTTPS with TLS:</strong> Encrypts data in transit, ensuring confidentiality and integrity between clients and servers.</li>
+        <li><strong>Content Security Policy (CSP):</strong> Mitigates XSS attacks by specifying allowed sources for content loading.</li>
+        <li><strong>Secure Cookies:</strong> Attributes like <code>Secure</code>, <code>HttpOnly</code>, and <code>SameSite</code> enhance cookie security, reducing risks of theft and cross-site attacks.</li>
+        <li><strong>OAuth 2.0 & OpenID Connect:</strong> Provide secure authorization and authentication mechanisms for third-party applications.</li>
+        <li><strong>Multi-Factor Authentication (MFA):</strong> Adds layers of security by requiring multiple verification methods.</li>
+        <li><strong>Web Application Firewalls (WAFs):</strong> Filter and monitor HTTP traffic to protect against common attacks like SQL injection and XSS.</li>
+        <li><strong>Runtime Application Self-Protection (RASP):</strong> Integrates security into applications, allowing them to detect and prevent real-time threats.</li>
+      </ul>
 
-            <h3>Modern Threats & Defenses</h3>
-            <ul>
-                <li><strong>Phishing:</strong> Combated using email filters, MFA, and user education.</li>
-                <li><strong>Cross-Site Scripting (XSS):</strong> Prevented using CSP and input validation libraries like DOMPurify.</li>
-                <li><strong>Cross-Site Request Forgery (CSRF):</strong> Mitigated with tokens (CSRF tokens) and `SameSite` cookies.</li>
-            </ul>
+      <h3>Modern Threats & Defenses</h3>
+      <ul>
+        <li><strong>Phishing Attacks:</strong> Combated through user education, email filtering, and MFA implementation.</li>
+        <li><strong>Cross-Site Scripting (XSS):</strong> Prevented using CSP, input validation, and output encoding techniques.</li>
+        <li><strong>Cross-Site Request Forgery (CSRF):</strong> Mitigated with CSRF tokens and proper use of <code>SameSite</code> cookie attributes.</li>
+        <li><strong>Denial-of-Service (DoS) Attacks:</strong> Addressed by rate limiting, traffic filtering, and scalable infrastructure.</li>
+        <li><strong>Supply Chain Attacks:</strong> Reduced by verifying third-party dependencies and employing software composition analysis tools.</li>
+      </ul>
 
-            <h3>Security Best Practices</h3>
-            <p>Security is now built into the software development lifecycle (SDLC) with practices like regular code reviews, penetration testing, dependency scanning, and automated security audits.</p>
+      <h3>Security Best Practices</h3>
+      <p>Integrating security throughout the Software Development Lifecycle (SDLC) is crucial. Key practices include:</p>
+      <ul>
+        <li><strong>Threat Modeling:</strong> Identifying potential threats and designing mitigations during the planning phase.</li>
+        <li><strong>Secure Coding Standards:</strong> Adhering to guidelines that prevent common vulnerabilities.</li>
+        <li><strong>Regular Code Reviews:</strong> Ensuring code quality and identifying security issues early.</li>
+        <li><strong>Automated Testing:</strong> Utilizing static and dynamic analysis tools to detect vulnerabilities.</li>
+        <li><strong>Continuous Monitoring:</strong> Keeping an eye on applications and infrastructure for suspicious activities.</li>
+      </ul>
 
-            <h3>Industry Adoption</h3>
-            <p>Organizations comply with standards like GDPR, CCPA, and PCI-DSS to protect user data and ensure regulatory compliance.</p>
-        </section>
-    </main>
+      <h3>Industry Compliance & Standards</h3>
+      <p>Organizations must adhere to various regulations to ensure data protection and privacy:</p>
+      <ul>
+        <li><strong>General Data Protection Regulation (GDPR):</strong> Governs data protection and privacy in the European Union.</li>
+        <li><strong>California Consumer Privacy Act (CCPA):</strong> Enhances privacy rights and consumer protection for residents of California.</li>
+        <li><strong>Payment Card Industry Data Security Standard (PCI DSS):</strong> Sets requirements for organizations handling credit card information.</li>
+        <li><strong>Health Insurance Portability and Accountability Act (HIPAA):</strong> Regulates the handling of healthcare information in the U.S.</li>
+      </ul>
+      <p>Compliance with these standards not only avoids legal penalties but also fosters trust with users and stakeholders.</p>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Web Security Project. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Web Security Project. All rights reserved.</p>
+  </footer>
 </body>
 </html>
