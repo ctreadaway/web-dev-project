@@ -13,9 +13,9 @@ body {
 
 /* === Shared Content Container (NEW) === */
 .content-container {
-    max-width: 1200px;       /* keeps text away from logos */
-    margin: 0 auto;         /* centers the content */
-    padding: 20px;          /* inner spacing */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* === Header and Footer Shared Styling === */
@@ -98,180 +98,100 @@ main {
     color: #B8B8B8;
 }
 
-/* === Page-Specific Styles === */
+/* === Media Queries === */
 
-/* INDEX PAGE - Atlanta Skyline */
-body.index-page {
-    background-image: url('https://ca264df6b006075d6612-4d8693febf8638b9aceea3f57dbca0ba.ssl.cf1.rackcdn.com/Architecture-041-170502.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
 }
 
-/* BRAVES PAGE */
-body.braves-page {
-    background-color: #13274F; /* Braves Navy */
-    color: #ffffff;
-    background-image: url('https://logos-world.net/wp-content/uploads/2020/06/Atlanta-Braves-Logo-1990-2017.png'), 
-                      url('https://logos-world.net/wp-content/uploads/2020/06/Atlanta-Braves-Logo-1990-2017.png');
-    background-size: 20%;
-    background-repeat: repeat-y;
-    background-position: left center, right center;
-    background-attachment: fixed;
-    padding: 40px; /* Keeps content from overlapping the side logos */
+/* Medium devices (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
 }
 
-.braves-page header,
-.braves-page footer {
-    background-color: #CE1141;
+/* Large devices (desktops) */
+@media screen and (min-width: 1025px) {
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* === Specific Styles for Other Pages (except index) === */
+
+/* Early Security Page */
+body.earlysecurity-page {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.earlysecurity-page header, .earlysecurity-page footer {
+    background-color: #4CAF50;
     color: white;
 }
 
-/* Braves Timeline */
-.braves-page .timeline {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #1D1D1B;
-    border-radius: 10px;
-}
-
-.braves-page .timeline h3 {
-    font-size: 2rem;
-    color: #CE1141; /* Braves Red */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.braves-page .timeline ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-.braves-page .timeline ol li {
-    background-color: #2C2926;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.1rem;
-}
-
-.braves-page .timeline ol li strong {
-    color: #CE1141; /* Braves Red */
-}
-
-.braves-page .timeline ol li:nth-child(even) {
-    background-color: #13274F; /* Braves Navy */
-}
-
-/* HAWKS PAGE */
-body.hawks-page {
-    background-color: #E03A3E;
-    color: white;
-    background-image: url('https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Hawks-Symbol.png'),
-                      url('https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Hawks-Symbol.png');
-    background-size: 20%;
-    background-repeat: repeat-y;
-    background-position: left center, right center;
-    background-attachment: fixed;
-    padding: 40px;
-}
-
-.hawks-page header,
-.hawks-page footer {
-    background-color: #FFFFFF;
-    color: #E03A3E;
-}
-
-/* Hawks Timeline */
-.hawks-page .timeline {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #1D1D1B;
-    border-radius: 10px;
-}
-
-.hawks-page .timeline h3 {
-    font-size: 2rem;
-    color: #E03A3E; /* Hawks Red */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.hawks-page .timeline ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-.hawks-page .timeline ol li {
-    background-color: #2C2926;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.1rem;
-}
-
-.hawks-page .timeline ol li strong {
-    color: #E03A3E; /* Hawks Red */
-}
-
-.hawks-page .timeline ol li:nth-child(even) {
-    background-color: #C8102E; /* Darker Hawks Red */
-}
-
-/* FALCONS PAGE */
-body.falcons-page {
-    background-color: #A71930;
-    color: white;
-    background-image: url('https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Falcons-symbol.jpg'),
-                      url('https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Falcons-symbol.jpg');
-    background-size: 20%;
-    background-repeat: repeat-y;
-    background-position: left center, right center;
-    background-attachment: fixed;
-    padding: 40px;
-}
-
-.falcons-page header,
-.falcons-page footer {
-    background-color: #000000;
+/* Modern Security Page */
+body.modernsecurity-page {
+    background-color: #1e1e1e;
     color: white;
 }
 
-/* Falcons Timeline */
-.falcons-page .timeline {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #1D1D1B;
-    border-radius: 10px;
-}
-
-.falcons-page .timeline h3 {
-    font-size: 2rem;
-    color: #A71930; /* Falcons Red */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.falcons-page .timeline ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-.falcons-page .timeline ol li {
-    background-color: #2C2926;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
+.modernsecurity-page header, .modernsecurity-page footer {
+    background-color: #2196F3;
     color: white;
-    font-size: 1.1rem;
 }
 
-.falcons-page .timeline ol li strong {
-    color: #A71930; /* Falcons Red */
+.modernsecurity-page .content-container {
+    background-color: #2b2b2b;
+    padding: 30px;
 }
 
-.falcons-page .timeline ol li:nth-child(even) {
-    background-color: #000000; /* Falcons Black */
+/* Quiz and Resources Pages */
+body.quiz-page, body.resources-page {
+    background-color: #333;
+    color: white;
+}
+
+.quiz-page header, .resources-page header {
+    background-color: #FF5722;
+}
+
+.quiz-page footer, .resources-page footer {
+    background-color: #9E9E9E;
 }
