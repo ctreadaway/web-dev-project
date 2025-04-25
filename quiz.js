@@ -24,7 +24,7 @@ function submitQuiz() {
     }
 
     // Question 4: Braves league
-    if (q4 === "mlb") {
+    if (q4 === "fishing") {
         score++;
     }
 
