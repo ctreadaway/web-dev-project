@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Security</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Web Security Evolution</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="earlysecurity.html">Early Security</a></li>
+                <li><a href="modernsecurity.html">Modern Security</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h2>Modern Web Security (2000s – Present)</h2>
+            <p>Today’s web security involves a combination of advanced tools, strict protocols, and industry standards designed to protect users and data across increasingly complex applications.</p>
+        </section>
+
+        <section class="content">
+            <h3>Key Modern Security Tools</h3>
+            <ul>
+                <li><strong>HTTPS Everywhere:</strong> All modern websites use HTTPS with TLS to encrypt traffic and ensure data privacy.</li>
+                <li><strong>Content Security Policy (CSP):</strong> A browser feature that helps prevent XSS attacks by restricting resource loading.</li>
+                <li><strong>Secure Cookies:</strong> Cookies now include `Secure`, `HttpOnly`, and `SameSite` attributes to limit access and reduce cross-site risks.</li>
+                <li><strong>OAuth 2.0:</strong> A secure way to authorize third-party applications without sharing passwords.</li>
+                <li><strong>Multi-Factor Authentication (MFA):</strong> Adds another layer of login security beyond just passwords.</li>
+            </ul>
+
+            <h3>Modern Threats & Defenses</h3>
+            <ul>
+                <li><strong>Phishing:</strong> Combated using email filters, MFA, and user education.</li>
+                <li><strong>Cross-Site Scripting (XSS):</strong> Prevented using CSP and input validation libraries like DOMPurify.</li>
+                <li><strong>Cross-Site Request Forgery (CSRF):</strong> Mitigated with tokens (CSRF tokens) and `SameSite` cookies.</li>
+            </ul>
+
+            <h3>Security Best Practices</h3>
+            <p>Security is now built into the software development lifecycle (SDLC) with practices like regular code reviews, penetration testing, dependency scanning, and automated security audits.</p>
+
+            <h3>Industry Adoption</h3>
+            <p>Organizations comply with standards like GDPR, CCPA, and PCI-DSS to protect user data and ensure regulatory compliance.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Security Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
