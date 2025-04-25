@@ -7,11 +7,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
     color: white;
 }
 
-/* === Shared Content Container (NEW) === */
+/* === Shared Content Container === */
 .content-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -98,6 +97,139 @@ main {
     color: #B8B8B8;
 }
 
+/* === Page-Specific Styles === */
+
+/* INDEX PAGE - Atlanta Skyline */
+body.index-page {
+    background-image: url('https://ca264df6b006075d6612-4d8693febf8638b9aceea3f57dbca0ba.ssl.cf1.rackcdn.com/Architecture-041-170502.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* === Early Security Page === */
+body.earlysecurity-page {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.earlysecurity-page header,
+.earlysecurity-page footer {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.earlysecurity-page .content-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === Modern Security Page === */
+body.modernsecurity-page {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.modernsecurity-page header,
+.modernsecurity-page footer {
+    background-color: #2196F3;
+    color: white;
+}
+
+.modernsecurity-page .content-container {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === Quiz Page === */
+body.quiz-page {
+    background-color: #333;
+    color: white;
+}
+
+.quiz-page header,
+.quiz-page footer {
+    background-color: #FF5722;
+    color: white;
+}
+
+.quiz-page .content-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-page .question {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.quiz-page .question h3 {
+    font-size: 1.5rem;
+}
+
+.quiz-page .question label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.quiz-page button {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.quiz-page button:hover {
+    background-color: #FF3D00;
+}
+
+/* === Resources Page === */
+body.resources-page {
+    background-color: #212121;
+    color: white;
+}
+
+.resources-page header,
+.resources-page footer {
+    background-color: #FF9800;
+    color: white;
+}
+
+.resources-page .content-container {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resources-page .card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.resources-page .card h4 {
+    font-size: 1.5rem;
+    color: #FF9800;
+}
+
+.resources-page .card p {
+    color: #B8B8B8;
+}
+
 /* === Media Queries === */
 
 /* Small devices (phones) */
@@ -151,47 +283,4 @@ main {
     header h1 {
         font-size: 2.5rem;
     }
-}
-
-/* === Specific Styles for Other Pages (except index) === */
-
-/* Early Security Page */
-body.earlysecurity-page {
-    background-color: #f1f1f1;
-    color: #333;
-}
-
-.earlysecurity-page header, .earlysecurity-page footer {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Modern Security Page */
-body.modernsecurity-page {
-    background-color: #1e1e1e;
-    color: white;
-}
-
-.modernsecurity-page header, .modernsecurity-page footer {
-    background-color: #2196F3;
-    color: white;
-}
-
-.modernsecurity-page .content-container {
-    background-color: #2b2b2b;
-    padding: 30px;
-}
-
-/* Quiz and Resources Pages */
-body.quiz-page, body.resources-page {
-    background-color: #333;
-    color: white;
-}
-
-.quiz-page header, .resources-page header {
-    background-color: #FF5722;
-}
-
-.quiz-page footer, .resources-page footer {
-    background-color: #9E9E9E;
 }
