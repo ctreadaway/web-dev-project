@@ -100,7 +100,7 @@ main {
 /* === Page-Specific Styles === */
 
 /* INDEX PAGE - Atlanta Skyline */
-body.index-page {
+body.indexpage {
     background-image: url('https://ca264df6b006075d6612-4d8693febf8638b9aceea3f57dbca0ba.ssl.cf1.rackcdn.com/Architecture-041-170502.jpg');
     background-size: cover;
     background-position: center;
@@ -108,18 +108,18 @@ body.index-page {
 }
 
 /* === Early Security Page === */
-body.earlysecurity-page {
+body.earlysecuritypage {
     background-color: #f4f4f4;
     color: #333;
 }
 
-.earlysecurity-page header,
-.earlysecurity-page footer {
+.earlysecuritypage header,
+.earlysecuritypage footer {
     background-color: #4CAF50;
     color: white;
 }
 
-.earlysecurity-page .content-container {
+.earlysecuritypage .content-container {
     background-color: #FFFFFF;
     padding: 30px;
     border-radius: 10px;
@@ -127,18 +127,18 @@ body.earlysecurity-page {
 }
 
 /* === Modern Security Page === */
-body.modernsecurity-page {
+body.modernsecuritypage {
     background-color: #1e1e1e;
     color: white;
 }
 
-.modernsecurity-page header,
-.modernsecurity-page footer {
+.modernsecuritypage header,
+.modernsecuritypage footer {
     background-color: #2196F3;
     color: white;
 }
 
-.modernsecurity-page .content-container {
+.modernsecuritypage .content-container {
     background-color: #2b2b2b;
     padding: 30px;
     border-radius: 10px;
@@ -146,41 +146,41 @@ body.modernsecurity-page {
 }
 
 /* === Quiz Page === */
-body.quiz-page {
+body.quizpage {
     background-color: #333;
     color: white;
 }
 
-.quiz-page header,
-.quiz-page footer {
+.quizpage header,
+.quizpage footer {
     background-color: #FF5722;
     color: white;
 }
 
-.quiz-page .content-container {
+.quizpage .content-container {
     background-color: #1e1e1e;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.quiz-page .question {
+.quizpage .question {
     background-color: #444;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.quiz-page .question h3 {
+.quizpage .question h3 {
     font-size: 1.5rem;
 }
 
-.quiz-page .question label {
+.quizpage .question label {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-.quiz-page button {
+.quizpage button {
     background-color: #FF5722;
     color: white;
     padding: 10px 20px;
@@ -191,42 +191,42 @@ body.quiz-page {
     margin-top: 20px;
 }
 
-.quiz-page button:hover {
+.quizpage button:hover {
     background-color: #FF3D00;
 }
 
 /* === Resources Page === */
-body.resources-page {
+body.resourcespage {
     background-color: #212121;
     color: white;
 }
 
-.resources-page header,
-.resources-page footer {
+.resourcespage header,
+.resourcespage footer {
     background-color: #FF9800;
     color: white;
 }
 
-.resources-page .content-container {
+.resourcespage .content-container {
     background-color: #2b2b2b;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.resources-page .card {
+.resourcespage .card {
     background-color: #333;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.resources-page .card h4 {
+.resourcespage .card h4 {
     font-size: 1.5rem;
     color: #FF9800;
 }
 
-.resources-page .card p {
+.resourcespage .card p {
     color: #B8B8B8;
 }
 
